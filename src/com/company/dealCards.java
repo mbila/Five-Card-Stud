@@ -32,16 +32,14 @@ public class dealCards {
         int counter = 0;
         if (playerNum == 1) {
             for (int i = 0; i < handSize; i++) {
-                CardValue cards = new CardValue();
                 System.out.println("Player 1's Hand: ");
-                System.out.println(cards.getCardValue(hand1[counter]));
+                System.out.println(CardValue.getCardValue(hand1[counter]));
                 counter++;
             }
         } else {
             for (int j = 0; j < handSize; j++) {
-                CardValue cards = new CardValue();
                 System.out.println("Player 2's Hand: ");
-                System.out.println(cards.getCardValue(hand2[counter]));
+                System.out.println(CardValue.getCardValue(hand2[counter]));
             }
         }
     }
