@@ -21,8 +21,12 @@ public enum CardValue {
     private int cardValue;
     private int cardNum;
 
+    CardValue() {
+        //constructor
+    }
+
     public CardValue getCardValue(int cardNum) {
-        CardValue card = CardValue.valueOf(cardNum);
+        CardValue card = CardValue.valueOf(Integer.toString(cardNum));
         return card;
     }
 
