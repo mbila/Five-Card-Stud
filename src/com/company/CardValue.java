@@ -25,7 +25,7 @@ public enum CardValue {
         //constructor
     }
 
-    public CardValue getCardValue(int cardNum) {
+    public static CardValue getCardValue(int cardNum) {
         CardValue card = CardValue.valueOf(Integer.toString(cardNum));
         return card;
     }
